@@ -3,6 +3,9 @@
 #### 1. In an A/B test, how can you check if assignment to the various buckets was truly random?
   - Plot the distributions of multiple features for both A and B and make sure that they have the same shape. More rigorously, we can conduct a permutation test to see if the distributions are the same.
   - MANOVA to compare different means
+  - **Visually compare the distribution (box and whiskers, histogram etc.) of each variable in group A and group B.** The more similar they are in appearance the more likely it is that assignment was random.
+  - **Statistically compare the distributions of each variable in group A and B using a goodness of fit test.** There are a bunch to choose from. Two common ones ares Kolmogorov-Smirnov Test for continuous features and Chi-Squared Test for categorical features.
+  Ref : https://www.quora.com/How-can-you-test-that-your-random-assignment-was-truly-random
 
 #### 2. What might be the benefits of running an A/A test, where you have two buckets who are exposed to the exact same product?
   - Verify the sampling algorithm is random.
