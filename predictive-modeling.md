@@ -170,3 +170,7 @@
 #### 19. You want to run a regression to predict the probability of a flight delay, but there are flights with delays of up to 12 hours that are really messing up your model. How can you address this?
 - This is equivalent to making the model more robust to outliers.
 - See Q3.
+
+#### 20. Explain bias-varience tradeoff?
+- **Bias** means "How well the model fit the data", in the other words, it is the error due to an overly simplstic assumptions in the learning algorithms.A bias error means an underfitting model, which keeps on missing important trends.
+- **Variance** means magnitude of the change in the model based on the change in the data - in case of a overfitting model.Meaning the predictive model being using is highly complex.
