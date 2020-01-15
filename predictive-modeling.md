@@ -184,7 +184,7 @@
   - Try to get Smaller set of features
   - Try Increasing Regularization parameter(Lambda)
 - [**Important Diagram**](https://github.com/ashoklathwal/Begineer-To-Advanced-Guide-in-the-world-of-data-science/blob/master/Logistic%20regression/Bias%20variance%20trade-off.pdf)
-#### Suppose you have given a dataset, how do you decide on which ML algorithm to use? How to start?
+#### 21. Suppose you have given a dataset, how do you decide on which ML algorithm to use? How to start?
 - There is no master algorithm which can fit any data set. Start with understanding the data, visualizing the data set can give a good starting point. For eg.
    1. If data shows linearity, then a linear algorithm may be good start.
    2. If data shows seasonality, time series can be good start as well.
