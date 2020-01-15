@@ -1,5 +1,10 @@
 ## Statistical Inference (15 questions)
 
+#### A/B Testing
+
+  * Your company is running a test that is designed to compare two different versions of the company’s website. Version A of the website     is shown to 60% of users, while version B of the website is shown to the remaining 40%. The test shows that 8% of users who are         presented with version A sign up for the company’s services, as compared to 4% of users who are presented with version B.
+    If a user signs up for the company’s services, what is the probability that she/he was presented with version A of the website?
+
 #### 1. In an A/B test, how can you check if assignment to the various buckets was truly random?
   - Plot the distributions of multiple features for both A and B and make sure that they have the same shape. More rigorously, we can conduct a permutation test to see if the distributions are the same.
   - MANOVA to compare different means
