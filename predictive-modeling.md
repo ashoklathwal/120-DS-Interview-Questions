@@ -174,3 +174,12 @@
 #### 20. Explain bias-varience tradeoff?
 - **Bias** means "How well the model fit the data", in the other words, it is the error due to an overly simplstic assumptions in the learning algorithms.A bias error means an underfitting model, which keeps on missing important trends.
 - **Variance** means magnitude of the change in the model based on the change in the data - in case of a overfitting model.Meaning the predictive model being using is highly complex.
+- **Fix High bias problem**
+  - Trying adding additional features
+  - Add polynomial terms
+  - Decreasing "Lambda"
+- **Fix High variance problem**
+  - Get more examples
+  - Smaller set of features
+  - Increasing "Lambda"
+- [**Important Diagram**](https://github.com/ashoklathwal/Begineer-To-Advanced-Guide-in-the-world-of-data-science/blob/master/Logistic%20regression/Bias%20variance%20trade-off.pdf)
