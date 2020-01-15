@@ -68,6 +68,7 @@
   - with a nonlinear kernel, can deal with problems that are not linearly separable
   - (-) slow to train, for most industry scale applications, not really efficient
 - Naive Bayes
+  - Naive Bayes algorithms assume that all featues in the data set are equally important. which may not be always be the case in real world.
   - computationally efficient when P is large by alleviating the curse of dimensionality
   - works surprisingly well for some cases even if the condition doesn’t hold
   - with word frequencies as features, the independence assumption can be seen reasonable. So the algorithm can be used in text categorization
@@ -176,10 +177,16 @@
 - **Variance** means magnitude of the change in the model based on the change in the data - in case of a overfitting model.Meaning the predictive model being using is highly complex.
 - **Fix High bias problem**
   - Trying adding additional features
-  - Add polynomial terms
-  - Decreasing "Lambda"
+  - Try to Add polynomial terms
+  - Try to Decreasing Regularization parameter(Lambda)
 - **Fix High variance problem**
-  - Get more examples
-  - Smaller set of features
-  - Increasing "Lambda"
+  - Try to Get more examples
+  - Try to get Smaller set of features
+  - Try Increasing Regularization parameter(Lambda)
 - [**Important Diagram**](https://github.com/ashoklathwal/Begineer-To-Advanced-Guide-in-the-world-of-data-science/blob/master/Logistic%20regression/Bias%20variance%20trade-off.pdf)
+#### Suppose you have given a dataset, how do you decide on which ML algorithm to use? How to start?
+- There is no master algorithm which can fit any data set. Start with understanding the data, visualizing the data set can give a good starting point. For eg.
+   1. If data shows linearity, then a linear algorithm may be good start.
+   2. If data shows seasonality, time series can be good start as well.
+   3. For non-linear interaction deployable an easily understandable models like decisions trees, regression tree models may be good; black box algorithm like SVM, GBM.
+   4. To work on images, audio then neural network may be good fit.
