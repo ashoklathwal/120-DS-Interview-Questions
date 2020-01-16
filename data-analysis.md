@@ -44,6 +44,7 @@
     - Eliminating the correlated variable like length, width and height can be eliminated  if you have the "area" calculated.
     - Dimentionality reduction by separating the categorical and numerical variables and remove the correlated varaibles. For numerical variables, use corrlation while for categorical variable use chi-square test.
     - Principal Component Analysis(PCA) explain the maximum variance in the data set.
+      - 
     - While using linear regression select variables based on P-value.
     - Measure the trends on target variable based on the available set of features and select top-n fatures accordingly.Applying a good business understanding to estimate the predictors impacting the response varaible can help.
     - run the features though a Gradient Boosting Machine or Random Forest to generate plots of relative importance and information gain for each feature in the ensembles.
