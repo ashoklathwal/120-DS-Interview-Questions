@@ -1,4 +1,4 @@
-## Predictive Modeling (19 questions)
+## Predictive Modeling 
 
 #### 1. (Given a Dataset) Analyze this dataset and give me a model that can predict this response variable.
 - Problem Determination -> Data Cleaning -> Feature Engineering -> Modeling
@@ -190,3 +190,8 @@
    2. If data shows seasonality, time series can be good start as well.
    3. For non-linear interaction deployable an easily understandable models like decisions trees, regression tree models may be good; black box algorithm like SVM, GBM.
    4. To work on images, audio then neural network may be good fit.
+#### 22. How should you maintain your deployed model?
+- **Monitor:** Constant monitoring of all of the models is needed to determine the performance accuracy of the models.   
+- **Evaluate:** Evaluation metrics of the current model is calculated to determine if new algorithm is needed
+- **Compare** The new models are compared against each other to determine which model performs the best
+- **Rebuild** The best performing model is re-built on current state of data
