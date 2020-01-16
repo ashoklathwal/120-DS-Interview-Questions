@@ -1,4 +1,4 @@
-## Data Analysis (27 questions)
+## Data Analysis
 
 #### 1. (Given a Dataset) Analyze this dataset and tell me what you can learn from it.
   - Typical data cleaning and visualization
@@ -40,9 +40,14 @@
   - The scientific method is eminently inductive: we elaborate a hypothesis, test it and refute it or not. As a result, we come up with new hypotheses which are in turn tested and so on. This is an iterative process, as science always is.
 
 #### 8. How can you determine which features are the most important in your model?
-  - Linear regression can use p-value
-  - run the features though a Gradient Boosting Machine or Random Forest to generate plots of relative importance and information gain for each feature in the ensembles.
-  - Look at the variables added in forward variable selection 
+  - Feature Selection is an art and a measure of one's experience in data mining field. A good business understanding of data is the key here.
+    - Eliminating the correlated variable like length, width and height can be eliminated  if you have the "area" calculated.
+    - Dimentionality reduction by separating the categorical and numerical variables and remove the correlated varaibles. For numerical variables, use corrlation while for categorical variable use chi-square test.
+    - Principal Component Analysis(PCA) explain the maximum variance in the data set.
+    - While using linear regression select variables based on P-value.
+    - Measure the trends on target variable based on the available set of features and select top-n fatures accordingly.Applying a good business understanding to estimate the predictors impacting the response varaible can help.
+    - run the features though a Gradient Boosting Machine or Random Forest to generate plots of relative importance and information gain for each feature in the ensembles.
+    - Look at the variables added in forward variable selection 
 
 #### 9. How do you deal with some of your predictors being missing?
   - Remove rows with missing values - This works well if
@@ -134,3 +139,9 @@ where  is the ability of person  and  is the difficulty of item}.
 #### 27. Let’s say you’re building the recommended music engine at Spotify to recommend people music based on past listening history. How would you approach this problem?
   - content-based filtering
   - collaborative filtering
+#### 28. Given a huge dataset lets say 500 features and 2 million records and assuming that you don't have unlimited memory. How would you go about understanding & applying ML algorithms?
+  - The interviwer is looking for an approach to this problem- Increasing RAM may not be the answer.
+    A. Stocastic Gradient Descent Models.
+    B. Eliminating the correlated variable like length, width and height can be eliminated  if you have the "area" calculated.
+    C. Dimentionality reduction by separating the categorical and numerical variables and remove the correlated varaibles. For numerical variables, use corrlation while for categorical variable use chi-square test.
+    D. Radomized dataset, with a smaller subset of data say 200k-400k.
